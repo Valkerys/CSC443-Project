@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Circa website.">
+    <meta name="keywords" content="computer, science, inventory, tools">
+    <meta name="author" content="Carlos Espinoza">
+    <!-- Title for whats written on the tab. -->
+    <title>Circa | Home</title>
+    <!-- Includes the website for pageclip for my email function to work and attached to the css -->
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <!-- Title for the top of my website using highlight1 properties -->
+          <h1><span class="highlight1">Circa </span> Website</h1>
+        </div>
+        <nav>
+          <u1>
+            <!-- This shows all the other pages I have within my website, using class to show the current one. -->
+            <li class="current"><a href="home.html">Home</a></li>
+            <li><a href="inventory.html">Inventory</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="settings.html">Settings</a></li>
+          </u1>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Making a conatiner for the wenter that will include a picture as the background to display the front of the page -->
+    <section id="showcase">
+      <div class="container">
+        <h1>Welcome to Circa's website!</h1>
+        <p>The main objective of this website is to create a tool for workers to find, create, add to inventory and facilitate their jobs.</p>
+    </div>
+  </section>
+
+<!-- Creaing 3 boxes that will be side by side when we are on a full screen and will adapt if page size changes -->
+<!-- Each one has a picture source that will display images restricted to 100 pixels -->
+<section id="boxes">
+  <div class="container">
+    <div class="box">
+      <img src="./img/code.png" width="100" height="100">
+      <h3>Jobs</h3>
+      <p>This page is desginated to list all the current and former jobs, find information about each one of them and edit them.</p>
+    </div>
+    <div class="box">
+      <img src="./img/backpack.png" width="100" height="100">
+      <h3>Inventory</h3>
+      <p>This page lists all the available inventory along with many attributes, quantity and other useful information.</p>
+    </div>
+    <div class="box">
+      <img src="./img/pipboy.png" width="100" height="100">
+      <h3>Settings</h3>
+      <p>This page is used to change your password, username, email and other personal information.  
+        For admin level users, you are able to add users through here. </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Circa Website &copy; 2019</p>
+</footer>
+
+<!-- Finishing the script for the email button so it runs -->
+<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+  </body>
+</html>
