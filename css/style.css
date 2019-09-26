@@ -1,0 +1,285 @@
+body{
+  /* font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: : 1.5;
+  Same thing as the line below, just shorter and faster*/
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding:0;
+  margin:0;
+  background-color: #202020;
+
+}
+
+/* Global */
+.container{
+  width:80%; /* This way this adapts to the web page being changed*/
+  margin: auto;
+  overflow: hidden;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+.button_1{
+  height:38px;
+  background: #45a29e;
+  border:0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+}
+
+.button_2{
+    height:38px;
+    background: #ffcb9a;
+    border:0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #000000;
+}
+
+
+.dark{
+  padding:15px;
+  background:#1f2833;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.white{
+  padding: 15px;
+  background: #45a29e;
+  color: #000000;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.border{
+  padding: 15px;
+  background:#1f2833;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+  border-top: #d9b08c 8px solid;
+  border-left: #ffcb9a 8px solid;
+  border-right: #ffcb9a 8px solid;
+  border-bottom: #d9b08c 8px solid;
+}
+
+.head{
+  background: #1f2833;
+  color: #ffffff
+}
+
+/* Header */
+header{
+  background: #1f2833;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #d9b08c 10px solid;
+}
+
+header a{
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header li{
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float: left;
+}
+
+header #branding h1{
+  margin:0;
+  /*color: #ffffff;*/
+}
+
+header nav{
+  float:right;
+  margin-top: 10px;
+}
+
+header .highlight1, header .current1 a{
+  color:#d9b08c;
+  font-weight: bold;
+}
+
+header .highlight, header .current a{
+  color:#66fcf1;
+  font-weight: bold;
+}
+
+
+header a:hover{
+  color: #45a29e;
+  font-weight:bold;
+}
+
+/* Showcase */
+#showcase{
+  min-height: 400px;
+  background:url('../img/background.jpg') no-repeat 0 -200px;
+  background-size:100% 100%;
+  background-position: center;
+  text-align: center;
+  color:#ffffff;
+}
+
+#showcase h1{
+  text-align: center;
+  margin-top: 25px;
+  font-size: 45px;
+  margin-bottom: 10px
+}
+
+#showcase p{
+  margin-top: 150px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#newsletter{
+  padding: 15px;
+  color: #ffffff;
+  background:#1f2833;
+}
+
+#newsletter h1{
+  float:left;
+  color: #ffffff;
+}
+
+#newsletter form {
+  float:right;
+  margin-top:15px;
+}
+
+#newsletter input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+
+/*  Boxes  */
+#boxes{
+  margin-top: 20px;
+}
+
+#boxes p, h3{
+  color: #ffffff;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width: 30%;
+  padding:10px;
+}
+
+#boxes .box img{
+  width: 90px
+}
+
+/* Sidebar */
+aside#sidebar{
+  float: left;
+  width: 60%;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  float: left;
+  padding:5px;
+}
+
+/* Main-col */
+/* About Us section for the title and paragraph */
+article#main-col{
+  float:left;
+  width:65%;
+  padding:25px;
+  color: #ffffff
+
+}
+
+/* Services */
+ul#services{
+  list-style: none;
+  padding: 20px;
+  border: #cccccc solid 1px;
+  margin-bottom: 5px;
+  background: #1f2833;
+}
+
+
+footer{
+  padding: 20px;
+  margin-top: 20px;
+  color: #000000;
+  font-weight: bold;
+  background-color: #66fcf1;
+  text-align: center;
+}
+
+
+/* Media Queires*/
+@media(max-width: 200px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header{
+    padding-bottom: 20px;
+  }
+
+  #showcase h1{
+    margin-top: 40px;
+  }
+
+  #newsletter button, .quote button{
+    display: block;
+    width: 100%;
+  }
+
+  #newsletter form input[type="email"], .quote input, .quote textarea{
+    width: 100%;
+    margin-bottom:5px
+  }
+}
+
+.row {
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 25px;
+  vertical-align: middle;
+}
