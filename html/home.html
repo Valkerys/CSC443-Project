@@ -32,9 +32,50 @@
 
     <section id="showcase">
       <div class="container">
-        <h1>Circa</h1>
-        <p>Click Start to Begin</p>
-        <div class="container"><a class="example_f" rel="nofollow"><span>Add Call To Action</a></div>
+          <h2>Click on start to begin!</h2>
+
+          <!-- Trigger/Open The Modal -->
+          <button id="myBtn" class="button_3">Start</button>
+          
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>Fill the Form Please</p>
+              <form class="head">
+
+                <div> 
+                  <!-- Radio Checkbox -->
+                  <b>Select New or Active</b> 
+                  <br> 
+                  <input type="radio" name="subject" id="new"> 
+                  <label for="new">New</label> 
+                  <input type="radio" name="subject" id="active"> 
+                  <label for="active">Active</label>
+                </div>
+
+                <div>
+                  <!-- Selecting what you would like to see -->
+                  <label for="Action">Type:</label> 
+                  <select name="action" id="action">
+                      <option value="empty">-----</option> 
+                      <option value="Job">Job</option> 
+                      <option value="Material">Material</option> 
+                      <option value="Tool">Tool</option> 
+                  </select>
+                </div>
+                
+                <div>
+                    <button class="button_1">Go!</button>
+                </div>
+
+              </form> 
+            </div>  
+          </div>
+
+          
       </div>
     </section>
 
@@ -60,11 +101,40 @@
     </div>
   </div>
 </section>
+
 <div>
   <footer>
     <p>Circa Website &copy; 2019</p>
   </footer>
 </div>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
 
   </body>
 </html>
