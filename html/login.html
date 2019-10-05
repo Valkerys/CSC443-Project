@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>CIRCA | Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../css/login.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -10,12 +11,49 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="loginSection" class="">
-        <h5>Username</h5>
-        <input type="text" name="username">
-        <h5>Password</h5>
-        <input type="text" name="password">
-        <input type="submit" value="login">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">
+    <a class="navbar-brand" href="#">CIRCA</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbarNavAltMarkup">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse order-0 navbarNavAltMarkup">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Add Items</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Inventory</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+                <button type="button" class="btn btn-outline-light">Settings</button>
+            </li>
+        </ul>
     </div>
+</nav>
+<div id="loginSection" class="border border-primary rounded">
+    <form>
+        <div class="form-group">
+            <div class="form-group">
+                <label for="usernameInput">Username</label>
+                <input type="text" name="username" id="usernameInput" class="form-control" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <label for="passwordInput">Password</label>
+                <input type="text" name="password" id="passwordInput" class="form-control" placeholder="Password">
+            </div>
+            <div class="d-flex justify-content-end">
+                <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+        </div>
+    </form>
+</div>
 </body>
 </html>

@@ -1,3 +1,10 @@
+body {
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
 #loginSection {
-    background-color: chocolate;
+    padding: 20px;
 }
