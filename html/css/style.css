@@ -1,0 +1,299 @@
+body{
+  /* font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: : 1.5;
+  Same thing as the line below, just shorter and faster*/
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding:0;
+  margin:0;
+  background-color: #bbbbbb;
+
+}
+
+/* Global */
+.container{
+  width:80%; /* This way this adapts to the web page being changed*/
+  margin: auto;
+  overflow: hidden;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+.button_1{
+  height:40px;
+  width: 80px;
+  background: blue;
+  border:0.1em solid #FFFFFF;
+  border-radius:0.12em;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+}
+
+.button_2{
+    height:38px;
+    background: #ffcb9a;
+    border:0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #000000;
+}
+
+.button_3{
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border:0.1em solid #FFFFFF;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#FFFFFF;
+  text-align:center;
+  transition: all 0.2s;
+  width: 100px;
+  height: 40px;
+}
+.button_3:hover{
+  color: #FFFFFF;
+  background-color: blue;
+}
+@media all and (max-width:30em){
+  .button_3{
+    display: block;
+    margin: 0.4em auto;
+  }
+}
+
+.dark{
+  padding:15px;
+  background:#3498DB;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.white{
+  padding: 15px;
+  background: #45a29e;
+  color: #000000;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.border{
+  padding: 15px;
+  background:#1f2833;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+  border-top: #d9b08c 8px solid;
+  border-left: #ffcb9a 8px solid;
+  border-right: #ffcb9a 8px solid;
+  border-bottom: #d9b08c 8px solid;
+}
+
+.head{
+  background: #ffffff;
+  color: black;
+  border: 0.3em solid blue;
+  box-shadow: inset 0 0 10px #000000;
+  padding: 2ch;
+  height: 80%;
+}
+
+/* Header */
+header{
+  background: #1f2833;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #d9b08c 10px solid;
+}
+
+header a{
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header li{
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float: left;
+}
+
+header #branding h1{
+  margin:0;
+  /*color: #ffffff;*/
+}
+
+header nav{
+  float:right;
+  margin-top: 10px;
+}
+
+header .highlight1, header .current1 a{
+  color:#d9b08c;
+  font-weight: bold;
+}
+
+header .highlight, header .current a{
+  color:#66fcf1;
+  font-weight: bold;
+}
+
+header a:hover{
+  color: #45a29e;
+  font-weight:bold;
+}
+
+/* Showcase */
+#showcase{
+  min-height: 400px;
+  background:lightgray;
+  background-size:100% 100%;
+  background-position: center;
+  text-align: center;
+  color:#ffffff;
+}
+
+#showcase h1{
+  text-align: center;
+  margin-top: 25px;
+  font-size: 45px;
+  margin-bottom: 10px
+}
+
+#showcase p{
+  margin-top: 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+/*  Boxes  */
+#boxes{
+  margin-top: 20px;
+}
+
+#boxes p, h3{
+  color: #ffffff;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width: 30%;
+  padding:10px;
+}
+
+#boxes .box img{
+  width: 90px
+}
+
+/* Sidebar */
+aside#sidebar{
+  float: left;
+  width: 60%;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  float: left;
+  padding:5px;
+}
+
+/* Main-col */
+/* About Us section for the title and paragraph */
+article#main-col{
+  float:left;
+  width:65%;
+  padding:25px;
+  color: #ffffff
+
+}
+
+/* Services */
+ul#services{
+  list-style: none;
+  padding: 20px;
+  border: #cccccc solid 1px;
+  margin-bottom: 5px;
+  background: #1f2833;
+}
+
+
+footer{
+  padding: 20px;
+  margin-top: 20px;
+  color: #000000;
+  font-weight: bold;
+  background-color: #3498DB;
+  text-align: center;
+}
+
+.row {
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 25px;
+  vertical-align: middle;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 60%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
